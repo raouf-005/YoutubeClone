@@ -1,0 +1,25 @@
+p{
+   margin-bottom: 0px;
+   margin-top: 0px;
+   margin-left: 0px;
+   margin-right: 0px;
+   width: 100%;
+}
+body{
+   margin: 0px;
+   height: 3000px;
+   padding-top: 97px;
+   padding-left:10.5%;
+   padding-right: 4%;
+   background-color: rgb(252, 250, 250);
+   font-family: Roboto,Arial;
+}
+
+@media(max-width:670px){
+   body{
+      padding-left: auto;
+   }
+}
+
+
+

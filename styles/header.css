@@ -1,0 +1,226 @@
+.search-logo{
+   
+   height: 25px;
+   object-position: center;
+   object-fit: contain;
+   margin-right: 0px;
+   cursor: pointer;
+}
+.search-bar{
+   width: 100%;
+   height: 43px;
+   min-width: 100px;
+   font-size:16px;
+   border-top-right-radius: 0px;
+   border-bottom-right-radius: 0px;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border: none;
+   box-shadow: inset 1px 0px 3px rgba(48, 44, 44, 0.07);
+   padding-left: 15px;
+   
+}
+.header{
+   display: flex;
+   flex-direction: row;
+   height: 58px;
+   align-items: center;
+   justify-content: space-between;
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   background-color: white;
+   border-bottom-width:0.1px ;
+   border-bottom-color:rgba(0, 0, 0, 0.01);
+   border-bottom-style:solid ;
+   z-index: 250;
+   padding-left: 0.38%;
+}
+
+.search-layout{
+   flex: 1;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: lefa;
+   max-width: 700px;
+}
+.items-layout{
+   width: 250px;
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: end;
+}
+
+.hamburger-button{
+   
+   width: 28px;
+   object-position: center;
+   object-fit: contain;
+   cursor: pointer;
+   border: none;
+   border-radius: 100%;
+   padding: 8.5px;
+   transition: background-color,0.15s;
+   margin-left: 14.65px;
+   margin-right: 21px;
+}
+
+@media(max-width:1100px){
+   .hamburger-button{
+      margin-left: 8px;
+   }
+}
+.left-section{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-right: 50px;
+}
+.pers-logo{
+   object-fit: contain;
+   object-position: center;
+   width: 35px;
+   border-radius: 100%;
+   margin-left: 18px;
+   margin-right: 36px;
+   cursor: pointer;
+}
+.record-logo{
+   width: 36px;
+   object-fit: cover;
+   object-position: center;
+   cursor: pointer;
+   border: none;
+   padding: 5px;
+   border-radius: 100%;
+   transition: background-color,0.15s;
+}
+.notification-icon{
+   border-radius: 100%;
+   object-fit: cover;
+   object-position: center;
+   cursor: pointer;
+   padding: 10.5px;
+   padding-right: 10.8px;
+   transition: background-color,0.15s;
+   border-radius: 100%;
+}
+.notification-container{
+   position: relative;
+   display: flex;
+}
+.notification-count{
+   position: absolute;
+   border-radius: 100%;
+   padding-left: 3px;
+   padding-right: 4px;
+   padding-top: 0.2px;
+   padding-bottom: 0px;
+   background-color: red;
+   color: white;
+   font-size: 11px;
+   right: 7px;
+   top: 8px;
+   text-align: center;
+}
+.search-button{
+   margin-left: -0.5px;
+   width: 78px;
+   height: 45px;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+   border-top-left-radius: 0px;
+   border-bottom-left-radius: 0px;
+   border: 0.5px;
+   border-color: rgb(201, 194, 194);
+   border-style: solid;
+   background-color: #f8f8f8;
+   box-shadow: inset 1px 0px 3px rgba(48, 44, 44, 0.07);
+   cursor: pointer;
+   position: relative;
+   
+}
+.mic-button{
+   border: none;
+   margin: 0px;
+   margin-left: 18px;
+   cursor: pointer;
+   padding: 11px;
+   height: 44px;
+   border-radius: 100%;
+   padding: 10px;
+   background-color: transparent;
+   transition: background-color,0.15s;
+   position: relative;
+}
+.mic-icon{
+   height: 25px;
+   padding-top: 0.5px;
+}
+.mic-button:hover,.notification-icon:hover,.record-logo:hover,.hamburger-button:hover{
+background-color: rgb(231, 230, 230);
+}
+.search-button,.mic-button,.record-logo-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.search-button .tooltip,.mic-button .tooltip,.notification-container .tooltip,.record-logo-container .tooltip{
+      position: absolute;
+      padding: 9.7px;
+      border-radius: 5.5px;
+      background-color: gray;
+      color: white;
+      font-size: 13px;
+      bottom: -55px;
+      opacity: 0;
+      transition: opacity,0.19s;
+      pointer-events: none;
+      white-space: nowrap;
+      
+
+}
+
+.search-button:hover .tooltip,.mic-button:hover .tooltip, .notification-container:hover .tooltip,.record-logo-container:hover .tooltip{
+   opacity: 1;
+   transition-delay: 0.33s;
+}
+
+/*tooltip active styling*/
+
+.tooltip-active{
+   position: absolute;
+   transform: translateY(101%);
+   bottom: 0;
+   right: -2px;
+   display: flex;
+   flex-direction: column;
+   width: 252px;
+   height: 95px;
+   background-color: white;
+   z-index: 100;
+   justify-content: center;
+   border-radius: 16px;
+   border: none;
+   box-shadow: 0px 0px 8px rgba(46, 44, 44, 0.2);
+   opacity: 0;
+   
+}
+
+.tooltip-active-element{
+   transition: background-color,0.15s;
+   padding:  6px;
+   padding-left: 20px;
+   border-radius: 5px;
+   height: 26px;
+   margin-left: 0.7px;
+}
+.tooltip-active-element:hover{
+   background-color: rgb(231, 230, 230);
+   
+}

@@ -1,0 +1,83 @@
+.side-bar2{
+   position: fixed;
+   top: 0px;
+   bottom: 0px;
+   left: 0px;
+   width: 253px;
+   background-color: white;
+   border-right: 0.3px solid rgb(219, 213, 213);
+   z-index: 300;
+   display: flex;
+   justify-content: top;
+   flex-direction: column;
+   padding-left: 10px;
+   transform: translateX(-270px);
+   transition: transform 0.14s ease-in-out;
+
+}
+.side-button{
+   padding: 12px 0px 12px 15px ;
+   display: flex;
+   align-items: center;
+   justify-content: left;
+   flex-direction: row;
+   width: 210px;
+   cursor: pointer;
+   border-radius: 14px;
+   transition: background-color,0.075s;
+}
+
+.sidebar-header{
+   height: 50px;
+   margin-bottom: 10px;
+   align-items: center;
+   vertical-align: center;
+   display: flex;
+   padding-top: 7px;
+   margin-left: 5px;
+}
+
+.side-button:hover{
+   background-color: rgb(236, 236, 236);
+}
+.hamburger-logo{ 
+   width: 28px;
+   object-position: center;
+   object-fit: contain;
+   border-radius: 100%;
+   border: none;
+   transition: background-color,0.15s; 
+   padding: 8.5px;
+   
+}
+.hamburger-logo:hover{
+   background-color: rgb(231, 230, 230);
+}
+.hamburger-button-sidebar{
+   cursor: pointer;
+   border: none;
+   background-color: transparent;
+   width: 38px;
+   margin-right: 21px;
+   padding: 0;
+   
+}
+
+.youtube-logo{
+   height: 27px;
+   object-position: center;
+   object-fit: contain;
+   margin-right: 0px;
+   cursor: pointer;
+   margin-left: 2px;
+}
+.side-text{
+   padding-left: 30px;
+}
+
+.shorts-img{
+   width: 24px;
+   object-fit: cover;
+   object-position: center;
+
+}
