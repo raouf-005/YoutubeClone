@@ -4,12 +4,12 @@
    const videohtml=`
          <div class="video-preview">
             <div class="thumnail-frame">
-               <img class="thumnail"  src="/thumnails/${videoelement.image}" alt="">
+               <img class="thumnail"  src="./thumnails/${videoelement.image}" alt="">
                <div class="video-time">${videoelement.time}</div>
             </div>
             <div class="under-thumnail">
                <div class="logo-frame">
-                  <img class="channel-logo" src="/channellogo/${videoelement.channel.logo}" alt="">
+                  <img class="channel-logo" src="./channellogo/${videoelement.channel.logo}" alt="">
                </div>
                <div class="description-frame">
                   <p class="video-title">${videoelement.title}</p>
